@@ -29,8 +29,8 @@ const pool = new Pool({
 //   })
 // });
 
-let cohort = process.argv[2];
-let limit = process.argv[3];
+const cohort = process.argv[2];
+const limit = process.argv[3];
 
 pool.query(`
 SELECT students.id  as student_id, students.name as name, cohorts.name as cohort
